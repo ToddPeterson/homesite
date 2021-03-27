@@ -16,9 +16,9 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from vue_test import views as vue_views
+from recipes import views as recipe_views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('vue-test', vue_views.vue_view),
+    path('', recipe_views.home),
 ]
